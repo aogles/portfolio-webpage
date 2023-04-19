@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    "whitenoise.runserver_nostatic"
+    "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
@@ -168,21 +168,27 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# substitutnig a custom User model
-# docs.djangoproject.com/
-AUTH_USER_MODEL = 'accounts.User'
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# MEDIA_ROOT is the path to the root directory where the files are getting stored
+# MEDIA_URL is the URL that will serve the media files
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# Static file directories
-# https://docs.djangoproject.com/en/3.1/ref/settings/#staticfiles-dirs
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# substitutnig a custom User model
+# docs.djangoproject.com/
+AUTH_USER_MODEL = 'accounts.User'
+
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'frontend/static/build/static'),)
-REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/static')
-
+# site id
+# https://dj-rest-auth.readthedocs.io/en/latest/installation.html#registration-optional
 SITE_ID = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+REST_AUTH_SERIALIZERS = {
+    'USER_DETAILS_SERIALIZER': 'accounts.serializers.CustomUserDetailsSerializer',
+    'TOKEN_SERIALIZER': 'accounts.serializers.CustomTokenSerializer',
+}
