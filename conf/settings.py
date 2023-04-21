@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'frontend.apps.FrontendConfig',
     'api.apps.ApiConfig',
+    'blogs.apps.BlogsConfig',
 
     # 3rd Party
     'rest_framework',
