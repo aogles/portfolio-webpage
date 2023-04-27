@@ -1,10 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <nav>
+        {" "}
+        <Header />
+      </nav>
+      <h1 id="page-title">Hello World,Im Amber</h1>
     </div>
   );
 }
