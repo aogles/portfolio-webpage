@@ -11,4 +11,13 @@ class Blog(models.Model):
     image = models.ImageField(upload_to='images/', blank=True, null=True)
 
     def __str__(self):
-        return self.text
+        return self.title
+
+
+class Contact(models.Model):
+    email = models.EmailField()
+    name = models.CharField(max_length=50)
+    phone = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.name

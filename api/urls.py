@@ -5,5 +5,6 @@ app_name = "api_v1"
 
 urlpatterns = [
     path('', include('accounts.urls',)),
+    path('blogs/', include('blogs.urls',)),
 
 ]

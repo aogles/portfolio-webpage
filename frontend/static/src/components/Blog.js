@@ -1,11 +1,29 @@
 import Header from "./Header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 
 function Blog(blog) {
   const [image, setImage] = useState(null);
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
+
+  const useEffect (() => {
+    const getBlogs = async () => {
+      const response = await fetch("/api_v1/blogs/");
+      if (!response.ok) {
+        throw new Error("Network response was not OK");
+      }
+
+      const data = await response.json();
+      
+    };
+
+      getBlogs();
+    }, []);
+  
+    
+  
+  
 
   const addBlog = async () => {
     const formData = new FormData();
