@@ -7,7 +7,7 @@ function Blog(blog) {
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
 
-  const useEffect (() => {
+  useEffect(() => {
     const getBlogs = async () => {
       const response = await fetch("/api_v1/blogs/");
       if (!response.ok) {
@@ -15,15 +15,10 @@ function Blog(blog) {
       }
 
       const data = await response.json();
-      
     };
 
-      getBlogs();
-    }, []);
-  
-    
-  
-  
+    getBlogs();
+  }, []);
 
   const addBlog = async () => {
     const formData = new FormData();
