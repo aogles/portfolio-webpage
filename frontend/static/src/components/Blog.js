@@ -46,7 +46,9 @@ function Blog(blog) {
   return (
     <div>
       <Header />
-      <div>Blog Page</div>;
+      <div>Blog Page</div>;<h1>{blog.title}</h1>
+      <p>{blog.message}</p>
+      <div>{blog.image}</div>
     </div>
   );
 }
