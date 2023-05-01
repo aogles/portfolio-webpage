@@ -2,7 +2,8 @@ import Header from "./Header";
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 
-function Blog(blog) {
+function Blog({ blog, ...props }) {
+  const [blogs, setBlogs] = useState([]);
   const [image, setImage] = useState(null);
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
@@ -15,6 +16,7 @@ function Blog(blog) {
       }
 
       const data = await response.json();
+      setBlogs(data);
     };
 
     getBlogs();
@@ -26,15 +28,13 @@ function Blog(blog) {
     formData.append("title", title);
     formData.append("message", message);
 
-    console.log(title);
-
     const options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "X-CSRFToken": Cookies.get("csrftoken"),
       },
-      message: formData,
+      body: formData,
     };
     const response = await fetch("/api_v1/blogs/", options);
     if (!response.ok) {
@@ -43,12 +43,20 @@ function Blog(blog) {
     const data = await response.json();
   };
 
+  const blogHTML = blogs.map((blog) => (
+    <div key={blog.id}>
+      <h1>{blog.title}</h1>
+      <p>{blog.message}</p>
+      <image>{blog.image}</image>
+    </div>
+  ));
+
   return (
     <div>
       <Header />
-      <div>Blog Page</div>;<h1>{blog.title}</h1>
-      <p>{blog.message}</p>
-      <div>{blog.image}</div>
+      <div>Blog Page</div>
+
+      <div>{blogHTML}</div>
     </div>
   );
 }
