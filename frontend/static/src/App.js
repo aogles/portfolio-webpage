@@ -13,46 +13,46 @@ function App() {
   const [email, setEmail] = useState(null);
   const [contactMessage, setContactMessage] = useState("");
 
-  // useEffect(() => {
-  //   const getContactInfo = async () => {
-  //     const response = await fetch("/api_v1/contacts/");
-  //     if (!response.ok) {
-  //       throw new Error("Network response was not OK");
-  //     }
+  useEffect(() => {
+    const getContactInfo = async () => {
+      const response = await fetch("/api_v1/contacts/");
+      if (!response.ok) {
+        throw new Error("Network response was not OK");
+      }
 
-  //     const data = await response.json();
-  //     setContacts(data);
-  //   };
+      const data = await response.json();
+      setContacts(data);
+    };
 
-  //   getContactInfo();
-  // }, []);
+    getContactInfo();
+  }, []);
 
-  // const addContactInfo = async () => {
-  //   const contactInfo = {
-  //     name: name,
-  //     email: email,
-  //     phone: phone,
-  //     text: contactMessage,
-  //   };
+  const addContactInfo = async () => {
+    const contactInfo = {
+      name: name,
+      email: email,
+      phone: phone,
+      text: contactMessage,
+    };
 
-  //   const options = {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "X-CSRFToken": Cookies.get("csrftoken"),
-  //     },
-  //     body: JSON.stringify(contactInfo),
-  //   };
-  //   const response = await fetch("/api_v1/contacts/", options);
-  //   if (!response.ok) {
-  //     throw new Error("network repsonse not ok.");
-  //   }
-  //   const data = await response.json();
-  // };
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   addContactInfo({ name, email, phone, contactMessage });
-  // };
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRFToken": Cookies.get("csrftoken"),
+      },
+      body: JSON.stringify(contactInfo),
+    };
+    const response = await fetch("/api_v1/contacts/", options);
+    if (!response.ok) {
+      throw new Error("network repsonse not ok.");
+    }
+    const data = await response.json();
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addContactInfo({ name, email, phone, contactMessage });
+  };
 
   return (
     <div className="App">
