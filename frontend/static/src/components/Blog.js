@@ -51,8 +51,8 @@ function Blog({ blog, ...props }) {
 
   const blogHTML = blogs.map((blog) => (
     <div key={blog.id}>
-      <Button variant="primary" onClick={handleShow}>
-        <img src={blog.image} alt="Blog Image" />
+      <Button className="blogModal" variant="light" onClick={handleShow}>
+        <img src={blog.image} alt="Blog Image" className="blogImage" />
         <h1>{blog.title}</h1>
       </Button>
 
