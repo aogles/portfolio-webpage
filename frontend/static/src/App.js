@@ -49,6 +49,11 @@ function App() {
       throw new Error("network repsonse not ok.");
     }
     const data = await response.json();
+
+    setName("");
+    setPhone("");
+    setEmail("");
+    setContactMessage("");
   };
 
   return (
