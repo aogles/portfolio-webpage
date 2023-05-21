@@ -1,12 +1,18 @@
 import Header from "./Header";
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 function Blog({ blog, ...props }) {
   const [blogs, setBlogs] = useState([]);
   const [image, setImage] = useState(null);
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     const getBlogs = async () => {
@@ -45,9 +51,27 @@ function Blog({ blog, ...props }) {
 
   const blogHTML = blogs.map((blog) => (
     <div key={blog.id}>
-      <h1>{blog.title}</h1>
-      <p>{blog.message}</p>
-      <img src={blog.image} alt="Blog Image" />
+      <Button variant="primary" onClick={handleShow}>
+        <img src={blog.image} alt="Blog Image" />
+        <h1>{blog.title}</h1>
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{blog.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{blog.message}</Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   ));
 
