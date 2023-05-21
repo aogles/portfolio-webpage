@@ -9,8 +9,8 @@ import Cookies from "js-cookie";
 function App() {
   const [contacts, setContacts] = useState("");
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState(null);
-  const [email, setEmail] = useState(null);
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [contactMessage, setContactMessage] = useState("");
 
   useEffect(() => {
@@ -27,7 +27,8 @@ function App() {
     getContactInfo();
   }, []);
 
-  const addContactInfo = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const contactInfo = {
       name: name,
       email: email,
@@ -49,10 +50,6 @@ function App() {
     }
     const data = await response.json();
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addContactInfo({ name, email, phone, contactMessage });
-  };
 
   return (
     <div className="App">
@@ -61,14 +58,14 @@ function App() {
         <Header />
       </nav>
       <h1 id="page-title">Hello World,Im Amber</h1>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
             placeholder="Enter email"
-            onChange={setEmail}
             value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
@@ -76,29 +73,29 @@ function App() {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="name"
-            onChange={setName}
             value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Phone</Form.Label>
           <Form.Control
             type="text"
-            placeholder="name"
-            onChange={setPhone}
+            placeholder="phone number"
             value={phone}
+            onChange={(e) => setPhone(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>message</Form.Label>
           <Form.Control
             type="text"
-            placeholder="name"
-            onChange={setContactMessage}
+            placeholder="Message"
+            onChange={(e) => setContactMessage(e.target.value)}
             value={contactMessage}
           />
         </Form.Group>
