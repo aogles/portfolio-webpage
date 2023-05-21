@@ -47,7 +47,7 @@ function Blog({ blog, ...props }) {
     <div key={blog.id}>
       <h1>{blog.title}</h1>
       <p>{blog.message}</p>
-      <image>{blog.image}</image>
+      <img src={blog.image} alt="Blog Image" />
     </div>
   ));
 
