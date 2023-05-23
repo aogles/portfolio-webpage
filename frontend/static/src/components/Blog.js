@@ -9,10 +9,14 @@ function Blog({ blog, ...props }) {
   const [image, setImage] = useState(null);
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
-  const [show, setShow] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedBlog, setSelectedBlog] = useState(null);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => setShowModal(false);
+  const handleShow = (blog) => {
+    setSelectedBlog(blog);
+    setShowModal(true);
+  };
 
   useEffect(() => {
     const getBlogs = async () => {
@@ -42,36 +46,26 @@ function Blog({ blog, ...props }) {
       },
       body: formData,
     };
+
     const response = await fetch("/api_v1/blogs/", options);
     if (!response.ok) {
-      throw new Error("network repsonse not ok.");
+      throw new Error("Network response not OK");
     }
+
     const data = await response.json();
+    // Handle the response data if needed
   };
 
   const blogHTML = blogs.map((blog) => (
-    <div key={blog.id}>
-      <Button className="blogModal" variant="light" onClick={handleShow}>
+    <div className="blogContainer" key={blog.id}>
+      <Button
+        className="blogModal"
+        variant="light"
+        onClick={() => handleShow(blog)}
+      >
         <img src={blog.image} alt="Blog Image" className="blogImage" />
         <h1>{blog.title}</h1>
       </Button>
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>{blog.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{blog.message}</Modal.Body>
-
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </div>
   ));
 
@@ -80,7 +74,22 @@ function Blog({ blog, ...props }) {
       <Header />
       <div>Blog Page</div>
 
-      <div>{blogHTML}</div>
+      {blogHTML}
+
+      {selectedBlog && (
+        <Modal show={showModal} onHide={handleClose}>
+          <Modal.Header>
+            <Modal.Title>{selectedBlog.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{selectedBlog.message}</Modal.Body>
+
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      )}
     </div>
   );
 }
