@@ -4,10 +4,20 @@
   margin: 2rem;
 }
 
+.aboutMe {
+  align-items: center;
+}
+
 .fadein-text {
   font-family: Arial;
   font-size: 20px;
   animation: fadeIn 5s;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid red;
+  margin: 5rem;
+  min-height: 40rem;
+  max-width: 40rem;
 }
 
 @keyframes fadeIn {
