@@ -1,0 +1,20 @@
+#example-fade-text {
+  padding: 3rem;
+  border: solid red 2px;
+  margin: 2rem;
+}
+
+.fadein-text {
+  font-family: Arial;
+  font-size: 20px;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

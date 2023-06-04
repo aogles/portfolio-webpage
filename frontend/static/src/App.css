@@ -1,5 +1,17 @@
 @import url(CssFiles/Blog.css);
+@import url(CssFiles/About.css);
 
 h1 {
   color: black;
+}
+
+.contactForm {
+  border: 2px red solid;
+  border-radius: 5px;
+  padding: 3rem;
+  margin: 5rem;
+  margin-top: 25rem;
+}
+.contactTitle {
+  text-align: center;
 }
