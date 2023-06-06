@@ -5,7 +5,7 @@ function About() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="aboutMe">
       <Header />
       <article className="aboutMe">
         <div className="fadein-text">

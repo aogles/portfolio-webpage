@@ -6,6 +6,7 @@
 
 .aboutMe {
   align-items: center;
+  align-content: center;
 }
 
 .fadein-text {
@@ -14,10 +15,11 @@
   animation: fadeIn 5s;
   padding: 2rem;
   text-align: center;
-  border: 2px solid red;
-  margin: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10rem;
   min-height: 40rem;
   max-width: 40rem;
+  margin-left: 22rem;
 }
 
 @keyframes fadeIn {
