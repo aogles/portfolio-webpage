@@ -10,8 +10,8 @@ h1 {
   border-radius: 5px;
   padding: 3rem;
   margin: 5rem;
-  margin-top: 25rem;
-  background-color: antiquewhite;
+  margin-top: 2rem;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .contactTitle {
@@ -26,11 +26,30 @@ h1 {
   font-weight: 600;
   top: 4rem;
 }
+.Socials {
+  position: relative;
+  min-width: 8rem;
+  min-height: 25rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  top: -8rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.Socials-text {
+  border: solid salmon 0.5px;
+  min-width: 8rem;
+  min-height: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 .home-image {
   position: relative;
   margin: 5rem;
   left: 25rem;
+  border: 2rem white solid;
 }
 
 .App {

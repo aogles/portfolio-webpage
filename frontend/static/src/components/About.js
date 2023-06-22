@@ -9,21 +9,20 @@ function About() {
       <Header />
       <article className="aboutMe">
         <div className="fadein-text">
-          Testing Animation Anim pariatur cliche reprehenderit, enim eiusmod
-          high life accusamus terry richardson ad squid. Nihil anim keffiyeh
-          helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-          proident. Anim pariatur cliche reprehenderit, enim eiusmod high life
-          accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
-          craft beer labore wes anderson cred nesciunt sapiente ea proident.
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident. Anim pariatur
-          cliche reprehenderit, enim eiusmod high life accusamus terry
-          richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore
-          wes anderson cred nesciunt sapiente ea proident. Anim pariatur cliche
-          reprehenderit, enim eiusmod high life accusamus terry richardson ad
-          squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-          cred nesciunt sapiente ea proident.
+          As a highly motivated and disciplined individual with a passion for
+          problem-solving, I am excited to apply my skills and experience to the
+          field of software development. After six years in direct patient care
+          roles, I have honed my ability to adapt quickly to new challenges,
+          work collaboratively with diverse teams, and communicate effectively
+          under pressure. Throughout my career in healthcare, I gained valuable
+          experience in managing complex workflows, analyzing data, and
+          leveraging technology to improve patient outcomes. As an Army officer,
+          I developed skills in leadership, strategic planning, and project
+          management that are highly applicable to software development. I am
+          eager to leverage these skills to build innovative solutions that meet
+          the needs of users and businesses alike. Whether it's developing new
+          applications or improving existing ones, I am committed to delivering
+          high-quality, user-focused products that make a positive impact.
         </div>
       </article>
     </div>

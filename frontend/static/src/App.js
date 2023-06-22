@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import home from "./home.jpeg";
+import ReactDOM from "react-dom";
 
 function App() {
   const [contacts, setContacts] = useState("");
@@ -72,7 +73,21 @@ function App() {
         src={require("./home.jpeg")}
         style={{ width: 400, height: 400, borderRadius: 400 / 2 }}
       ></img>
-      <div className="Socials">Lets Connect!</div>
+      <div className="Socials">
+        <div className="Socials-text">
+          {" "}
+          <h2>Lets Connect </h2>
+          <p>
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-256.png"></img>
+          </p>
+          <p>
+            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"></img>
+          </p>
+          <p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1FzF6Xu9mFDEkhjdhSH92q0GN8sm3CKiEew&usqp=CAU"></img>
+          </p>
+        </div>
+      </div>
 
       <div className="contactForm">
         <p className="contactTitle">Leave your Contact information</p>
