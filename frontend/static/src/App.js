@@ -84,7 +84,10 @@ function App() {
             <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"></img>
           </p>
           <p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1FzF6Xu9mFDEkhjdhSH92q0GN8sm3CKiEew&usqp=CAU"></img>
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/2840/tiktok-logo-512.png"></img>
+          </p>
+          <p>
+            <img src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_email-256.png"></img>
           </p>
         </div>
       </div>
