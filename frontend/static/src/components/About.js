@@ -22,9 +22,10 @@ function About() {
           </p>
           <h1>About me professionally </h1>
           <p>
-            As a highly motivated and disciplined individual with a passion for
-            problem-solving, I am excited to apply my skills and experience to
-            the field of software development.
+            I am a highly motivated and disciplined individual with a passion
+            for problem-solving and creativity. As a recent Carolina Code School
+            graduate, I am excited to apply my new skills and experience to the
+            field of software development.
           </p>
           <p>
             {" "}
@@ -51,14 +52,6 @@ function About() {
         </div>
       </article>
 
-      <div>
-        <h2>Outside of Work </h2>
-        <p>
-          I enjoy gardening, crawfish boils and spedning time with my dogs arkai
-          and deku. anything sci-fi or fantasy and in the summer i love reading
-          by the pool
-        </p>
-      </div>
       <div id="about-images">
         <img
           className="headshot "
@@ -81,6 +74,17 @@ function About() {
           style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
         ></img>
       </div>
+      <article className="personal-intro">
+        <h2>Outside of Work </h2>
+        <p>
+          Gardening is one of my favorite past times, and during the summer
+          indulging in the tradition of crawfish boils brings a sense of
+          community and culinary adventure to my weekends. When I'm not tending
+          to my green thumb or savoring flavorful crustaceans, you can often
+          find me out and about enjoying the company of my dogs Deku and Arkai
+          or by the poolside with a good book in hand.
+        </p>
+      </article>
     </div>
   );
 }

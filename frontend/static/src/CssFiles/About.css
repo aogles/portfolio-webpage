@@ -15,7 +15,7 @@
   display: flex;
   align-items: flex-end;
   left: 100px;
-  top: 5rem;
+  top: 15rem;
   flex-direction: column;
 
   position: relative;
@@ -23,6 +23,17 @@
 
 .headshot {
   margin-bottom: 2rem;
+}
+
+.army {
+  position: relative;
+  left: 20em;
+}
+
+.crawfish {
+  position: relative;
+  left: 55em;
+  bottom: 12em;
 }
 
 .fadein-text {
@@ -37,11 +48,6 @@
   max-width: 40rem;
   margin-left: 22rem;
   background-color: antiquewhite;
-}
-
-.army {
-  position: relative;
-  left: 20em;
 }
 
 @keyframes fadeIn {
@@ -96,4 +102,20 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.personal-intro {
+  position: relative;
+  font-family: Arial;
+  font-size: 20px;
+  animation: fadeIn 5s;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 400px;
+  width: 600px;
+  margin: 4rem;
+  bottom: 15em;
+  left: 5rem;
+  background-color: antiquewhite;
 }
