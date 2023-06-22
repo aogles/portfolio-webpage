@@ -64,7 +64,7 @@ function App() {
         {" "}
         <Header />
       </nav>
-      <div className="title">
+      <div className="title  slide-right">
         <h1 id="page-title">Amber Oglesby</h1>
         <h2>Software Developer</h2>
       </div>

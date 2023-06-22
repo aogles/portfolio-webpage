@@ -12,9 +12,12 @@ function About() {
   return (
     <div className="aboutMeContainer">
       <Header />
+
       <div className="gradient"></div>
+
       <article className="aboutMe">
         <div className="fadein-text">
+          <h1>About me professionally </h1>
           As a highly motivated and disciplined individual with a passion for
           problem-solving, I am excited to apply my skills and experience to the
           field of software development. After six years in direct patient care
@@ -31,6 +34,15 @@ function About() {
           high-quality, user-focused products that make a positive impact.
         </div>
       </article>
+
+      <div>
+        <h2>Outside of Work </h2>
+        <p>
+          I enjoy gardening, crawfish boils and spedning time with my dogs arkai
+          and deku. anything sci-fi or fantasy and in the summer i love reading
+          by the pool
+        </p>
+      </div>
       <div id="about-images">
         <img
           className="headshot "
