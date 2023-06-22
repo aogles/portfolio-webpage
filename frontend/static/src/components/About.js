@@ -10,7 +10,7 @@ function About() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="aboutMe">
+    <div className="aboutMeContainer">
       <Header />
       <div className="gradient"></div>
       <article className="aboutMe">
@@ -31,24 +31,24 @@ function About() {
           high-quality, user-focused products that make a positive impact.
         </div>
       </article>
-      <div className="row">
+      <div id="about-images">
         <img
-          className="headshot column"
+          className="headshot "
           src={require("../Images/headshot.jpeg")}
           style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
         ></img>
         <img
-          className="army column"
+          className="army "
           src={require("../Images/army.jpeg")}
           style={{ width: 400, height: 300, borderRadius: 400 / 2 }}
         ></img>
         <img
-          className="dogs column"
+          className="dogs "
           src={require("../Images/dogs.jpeg")}
           style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
         ></img>
         <img
-          className="crawfish column"
+          className="crawfish "
           src={require("../Images/crawfish.jpeg")}
           style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
         ></img>

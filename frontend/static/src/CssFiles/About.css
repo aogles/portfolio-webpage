@@ -5,8 +5,24 @@
 }
 
 .aboutMe {
-  align-items: center;
-  align-content: center;
+  display: flex;
+  align-content: flex-start;
+  margin: 2rem;
+  position: relative;
+  float: right;
+}
+#about-images {
+  display: flex;
+  align-items: flex-end;
+  left: 100px;
+  top: 5rem;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.headshot {
+  margin-bottom: 2rem;
 }
 
 .fadein-text {
