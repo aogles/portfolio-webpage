@@ -11,6 +11,10 @@ function Work() {
       <Header />
       <h1>Work Page</h1>;
       <>
+        <div>
+          <h2>Current Stack</h2>
+        </div>
+
         <Button
           onClick={() => setOpen(!open)}
           aria-controls="example-fade-text"

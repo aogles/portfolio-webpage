@@ -6,12 +6,72 @@ h1 {
 }
 
 .contactForm {
-  border: 2px red solid;
+  border: none;
   border-radius: 5px;
   padding: 3rem;
   margin: 5rem;
   margin-top: 25rem;
+  background-color: antiquewhite;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .contactTitle {
   text-align: center;
+}
+
+.title,
+#page-title {
+  margin: 4rem;
+  position: relative;
+  color: antiquewhite;
+  font-weight: 600;
+  top: 4rem;
+}
+
+.home-image {
+  position: relative;
+  margin: 5rem;
+  left: 25rem;
+}
+
+.App {
+  background: linear-gradient(270deg, #fa8405, #e58868, #f4bfad);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

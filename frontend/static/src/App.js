@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
+import home from "./home.jpeg";
 
 function App() {
   const [contacts, setContacts] = useState("");
@@ -62,8 +63,16 @@ function App() {
         {" "}
         <Header />
       </nav>
-      <h1 id="page-title">Hello World,Im Amber</h1>
-      <h2>Software Developer</h2>
+      <div className="title">
+        <h1 id="page-title">Hello World,Im Amber</h1>
+        <h2>Software Developer</h2>
+      </div>
+      <img
+        className="home-image"
+        src={require("./home.jpeg")}
+        style={{ width: 400, height: 400, borderRadius: 400 / 2 }}
+      ></img>
+      <div className="Socials">Lets Connect!</div>
 
       <div className="contactForm">
         <p className="contactTitle">Leave your Contact information</p>
