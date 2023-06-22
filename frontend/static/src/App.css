@@ -37,12 +37,43 @@ h1 {
   padding: 2rem;
   border-radius: 5px;
 }
+.Socials img {
+  width: 70px;
+  height: 70px;
+}
+
+.row {
+  display: flex;
+  margin: 4rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.column {
+  flex: 2%;
+  padding: 1rem;
+}
+
+.plant-icons img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  margin: 0px;
+  top: -13.5rem;
+  left: 65rem;
+}
 
 .Socials-text {
-  border: solid salmon 0.5px;
+  text-align: center;
+  border: solid rgb(244, 153, 6) 0.5px;
   min-width: 8rem;
   min-height: 25rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Socials-text h3 {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .home-image {

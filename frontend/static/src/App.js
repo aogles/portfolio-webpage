@@ -65,7 +65,7 @@ function App() {
         <Header />
       </nav>
       <div className="title">
-        <h1 id="page-title">Hello World,Im Amber</h1>
+        <h1 id="page-title">Amber Oglesby</h1>
         <h2>Software Developer</h2>
       </div>
       <img
@@ -73,23 +73,39 @@ function App() {
         src={require("./home.jpeg")}
         style={{ width: 400, height: 400, borderRadius: 400 / 2 }}
       ></img>
-      <div className="Socials">
+      <div className="Socials ">
         <div className="Socials-text">
           {" "}
-          <h2>Lets Connect </h2>
-          <p>
-            <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-256.png"></img>
-          </p>
-          <p>
-            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"></img>
-          </p>
-          <p>
-            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/2840/tiktok-logo-512.png"></img>
-          </p>
-          <p>
-            <img src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_email-256.png"></img>
-          </p>
+          <h3 className="intro">
+            Hello and welcome to my portfolio! I'm Amber, and I'm thrilled that
+            you've taken the time to explore my work. I hope you find it
+            engaging and insightful. Don't hesitate to connect with me on any of
+            the social media platforms listed below, or you can leave your
+            contact information in the form provided, and I'll be sure to get in
+            touch with you promptly. Thank you again for visiting!
+            <p> - Amber</p>
+          </h3>
+          <div className="row">
+            <p className="column">
+              <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-256.png"></img>
+            </p>
+            <p className="column">
+              <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"></img>
+            </p>
+            <p className="column">
+              <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/2840/tiktok-logo-512.png"></img>
+            </p>
+            <p className="column">
+              <img src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_email-256.png"></img>
+            </p>
+          </div>
         </div>
+      </div>
+      <div className="plant-icons">
+        <img src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetable-64/340/agave_cactus_plant_nature_leaf_botany-256.png"></img>
+        <img src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetable-64/340/cactus_plant_green_nature_cacti-512.png"></img>
+        <img src="https://cdn3.iconfinder.com/data/icons/stationery-and-office-3/64/Laptop-computer-electronics-technology-computing-business-256.png"></img>
+        <img src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetable-64/340/agave_cactus_plant_nature_leaf_botany-256.png"></img>
       </div>
 
       <div className="contactForm">
