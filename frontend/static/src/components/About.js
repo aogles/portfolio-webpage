@@ -1,5 +1,10 @@
 import Header from "./Header";
 import { useState } from "react";
+import home from "../home.jpeg";
+import headshot from "../Images/headshot.jpeg";
+import crawfish from "../Images/crawfish.jpeg";
+import dogs from "../Images/dogs.jpeg";
+import army from "../Images/army.jpeg";
 
 function About() {
   const [open, setOpen] = useState(false);
@@ -7,6 +12,7 @@ function About() {
   return (
     <div className="aboutMe">
       <Header />
+      <div className="gradient"></div>
       <article className="aboutMe">
         <div className="fadein-text">
           As a highly motivated and disciplined individual with a passion for
@@ -25,6 +31,28 @@ function About() {
           high-quality, user-focused products that make a positive impact.
         </div>
       </article>
+      <div className="row">
+        <img
+          className="headshot column"
+          src={require("../Images/headshot.jpeg")}
+          style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
+        ></img>
+        <img
+          className="army column"
+          src={require("../Images/army.jpeg")}
+          style={{ width: 400, height: 300, borderRadius: 400 / 2 }}
+        ></img>
+        <img
+          className="dogs column"
+          src={require("../Images/dogs.jpeg")}
+          style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
+        ></img>
+        <img
+          className="crawfish column"
+          src={require("../Images/crawfish.jpeg")}
+          style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
+        ></img>
+      </div>
     </div>
   );
 }
