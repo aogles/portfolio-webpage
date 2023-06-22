@@ -39,6 +39,11 @@
   background-color: antiquewhite;
 }
 
+.army {
+  position: relative;
+  left: 20em;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
