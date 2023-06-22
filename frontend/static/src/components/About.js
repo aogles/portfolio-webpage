@@ -85,6 +85,7 @@ function About() {
           or by the poolside with a good book in hand.
         </p>
       </article>
+      <footer className="footer"></footer>
     </div>
   );
 }
