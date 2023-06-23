@@ -11,7 +11,11 @@ function Header() {
         <Container>
           <Navbar.Brand>
             <a href="/">
-              <img src={require("../Images/logo.png")} alt="home" />
+              <img
+                className="header-logo"
+                src={require("../Images/logo.png")}
+                alt="home"
+              />
             </a>
           </Navbar.Brand>
           <Nav className="me-auto">
