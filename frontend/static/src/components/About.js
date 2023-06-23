@@ -20,7 +20,7 @@ function About() {
           <p className="medical">
             <img src="https://cdn0.iconfinder.com/data/icons/education-color/128/education_color-14-2-256.png"></img>
           </p>
-          <h1>About me professionally </h1>
+          <h1>About Me Professionally</h1>
           <p>
             I am a highly motivated and disciplined individual with a passion
             for problem-solving and creativity. As a recent Carolina Code School
