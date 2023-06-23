@@ -59,8 +59,7 @@
   }
 }
 
-.gradient,
-.footer {
+.gradient {
   background: linear-gradient(270deg, #fa8405, #e58868, #f4bfad);
   background-size: 600% 600%;
   min-height: 400px;
@@ -75,9 +74,10 @@
   background: linear-gradient(270deg, #fa8405, #e58868, #f4bfad);
   background-size: 600% 600%;
   min-height: 400px;
-  min-width: 100%;
+  width: 100vw;
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
   position: absolute;
+
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
@@ -129,7 +129,7 @@
   width: 600px;
   margin: 4rem;
   margin-bottom: 0px;
-  bottom: 5em;
+  bottom: 15em;
   left: 5rem;
   background-color: antiquewhite;
 }

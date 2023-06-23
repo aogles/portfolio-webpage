@@ -159,6 +159,9 @@ function App() {
           </Button>
         </Form>
       </div>
+      <div className="foot">
+        © 2023, built using React.js and Django in New Orleans, LA
+      </div>
     </div>
   );
 }

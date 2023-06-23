@@ -3,7 +3,7 @@ import { useState } from "react";
 import home from "../home.jpeg";
 import headshot from "../Images/headshot.jpeg";
 import crawfish from "../Images/crawfish.jpeg";
-import dogs from "../Images/dogs.jpeg";
+import dogs from "../Images/dogs.JPG";
 import army from "../Images/army.jpeg";
 
 function About() {
@@ -65,7 +65,7 @@ function About() {
         ></img>
         <img
           className="dogs "
-          src={require("../Images/dogs.jpeg")}
+          src={require("../Images/dogs.JPG")}
           style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
         ></img>
         <img
@@ -74,6 +74,7 @@ function About() {
           style={{ width: 400, height: 500, borderRadius: 400 / 2 }}
         ></img>
       </div>
+      <footer className="footer"></footer>
       <article className="personal-intro">
         <h2>Outside of Work </h2>
         <p>
@@ -85,7 +86,7 @@ function About() {
           or by the poolside with a good book in hand.
         </p>
       </article>
-      <footer className="footer"></footer>
+      <div>© 2023, built using React.js and Django in New Orleans, LA</div>
     </div>
   );
 }

@@ -152,3 +152,8 @@ h2 {
     width: 100%;
   }
 }
+
+.foot {
+  background-color: white;
+  height: 20px;
+}
