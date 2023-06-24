@@ -1,4 +1,42 @@
 .header-logo {
+  position: relative;
   height: 70px;
   width: 70px;
+  left: 30em;
+}
+#header-logo:hover {
+  background: none;
+}
+
+.header-links {
+  position: relative;
+  margin: 1rem;
+  text-indent: 15px;
+  font-size: 30px;
+
+  left: 35px;
+}
+
+a {
+  color: rgb(69, 97, 69) !important;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
+  font-weight: 500;
+}
+a:hover {
+  background: #f58265;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  align-content: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: green !important;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
+}
+Navbar {
+  border-bottom: rgb(80, 79, 79);
 }

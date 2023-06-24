@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import home from "./home.jpeg";
 import ReactDOM from "react-dom";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { FaChevronCircleDown } from "react-icons/fa";
 
 function App() {
   const [contacts, setContacts] = useState("");
@@ -64,19 +66,38 @@ function App() {
         {" "}
         <Header />
       </nav>
+      <Player
+        id="hangingPlant"
+        autoplay
+        loop
+        src="https://assets3.lottiefiles.com/packages/lf20_prkjnzba.json"
+        style={{ height: "300px", width: "300px", alignItems: "right" }}
+      >
+        <Controls
+          visible={false}
+          buttons={["play", "repeat", "frame", "debug"]}
+        />
+      </Player>
       <div className="title  slide-right">
         <h1 id="page-title">Amber Oglesby</h1>
-        <h2>Software Developer</h2>
+        <h2>Full-Stack Developer | Building the Future, One Line at a Time </h2>
       </div>
       <img
         className="home-image"
         src={require("./home.jpeg")}
         style={{ width: 400, height: 400, borderRadius: 400 / 2 }}
       ></img>
+      <div className="arrow bounce">
+        <a href="#info-section">
+          <div style={{ width: 80, height: 80 }}>
+            <FaChevronCircleDown />
+          </div>
+        </a>
+      </div>
       <div className="Socials ">
         <div className="Socials-text">
           {" "}
-          <h3 className="intro">
+          <h3 className="intro" id="info-section">
             Hello and welcome to my portfolio! I'm Amber, and I'm thrilled that
             you've taken the time to explore my work. I hope you find it
             engaging and insightful. Don't hesitate to connect with me on any of
@@ -102,11 +123,21 @@ function App() {
         </div>
       </div>
       <div className="plant-icons">
-        <img src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetable-64/340/agave_cactus_plant_nature_leaf_botany-256.png"></img>
         <img src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetable-64/340/cactus_plant_green_nature_cacti-512.png"></img>
         <img src="https://cdn3.iconfinder.com/data/icons/stationery-and-office-3/64/Laptop-computer-electronics-technology-computing-business-256.png"></img>
-        <img src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetable-64/340/agave_cactus_plant_nature_leaf_botany-256.png"></img>
       </div>
+      <Player
+        id="hangingPlant2"
+        autoplay
+        loop
+        src="https://assets7.lottiefiles.com/packages/lf20_sg1vub6j.json"
+        style={{ height: "300px", width: "300px", alignItems: "right" }}
+      >
+        <Controls
+          visible={false}
+          buttons={["play", "repeat", "frame", "debug"]}
+        />
+      </Player>
 
       <div className="contactForm">
         <p className="contactTitle">Leave your Contact information</p>
@@ -159,6 +190,18 @@ function App() {
           </Button>
         </Form>
       </div>
+      <Player
+        id="footerplant"
+        autoplay
+        loop
+        src="https://assets7.lottiefiles.com/private_files/lf30_uzc6bf9z.json"
+        style={{ height: "300px", width: "300px", alignItems: "right" }}
+      >
+        <Controls
+          visible={false}
+          buttons={["play", "repeat", "frame", "debug"]}
+        />
+      </Player>
       <div className="foot">
         © 2023, built using React.js and Django in New Orleans, LA
       </div>
