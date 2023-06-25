@@ -1,0 +1,16 @@
+.experience-head {
+  position: relative;
+  border: red 3px solid;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  top: 15rem;
+  width: 70%;
+
+  left: 15%;
+}
+
+.tech-icons {
+  position: relative;
+  font-size: 60px;
+  left: 3rem;
+}

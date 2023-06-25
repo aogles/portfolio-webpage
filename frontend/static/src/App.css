@@ -1,6 +1,7 @@
 @import url(CssFiles/Blog.css);
 @import url(CssFiles/About.css);
 @import url(CssFiles/Header.css);
+@import url(CssFiles/Work.css);
 
 h1 {
   color: black;
