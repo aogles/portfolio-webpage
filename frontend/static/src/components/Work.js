@@ -16,25 +16,141 @@ function Work() {
       </div>
       <div>
         <div className="experience-head">
-          <h2>Experience</h2>
           <div className="row">
-            <div className="column  tech-icons">
+            <div className="column  tech-icons bounce">
               <FaGithub />
             </div>
-            <div className="column  tech-icons">
+            <div className="column  tech-icons bounce">
               <BiLogoJavascript />
             </div>
-            <div className="column  tech-icons">
+            <div className="column  tech-icons bounce">
               <FaPython />
             </div>
-            <div className="column  tech-icons">
+            <div className="column  tech-icons bounce">
               <BiLogoDjango />{" "}
             </div>
-            <div className="column  tech-icons">
+            <div className="column  tech-icons spin">
               <FaReact />
             </div>
-            <div className="column  tech-icons">
+            <div className="column  tech-icons bounce">
               <FaBootstrap />
+            </div>
+            <h2>Experience</h2>
+            <div>
+              <div class="job-title">
+                <div className="Company">
+                  <h6 className="job-title2">Front End Engineer"</h6>
+                  <h6 className="stack-logo">
+                    <a href="#" target="__blank">
+                      stack used
+                    </a>
+                  </h6>
+                </div>
+                <div class="timeframe">Oct 2022 - Present</div>
+              </div>
+              <div class="job-details">
+                <p>Helping build better API docs</p>
+                <ul>
+                  <li>
+                    Building out new Metrics features for data-driven API
+                    insights
+                  </li>
+                </ul>
+                <hr></hr>
+              </div>
+            </div>
+
+            <div>
+              <div class="job-title">
+                <div className="Company">
+                  <h6 className="job-title2">Front End Engineer"</h6>
+                  <h6 className="stack-logo">
+                    <a href="#" target="__blank">
+                      stack used
+                    </a>
+                  </h6>
+                </div>
+                <div class="timeframe">Oct 2022 - Present</div>
+              </div>
+              <div class="job-details">
+                <p>Helping build better API docs</p>
+                <ul>
+                  <li>
+                    Building out new Metrics features for data-driven API
+                    insights
+                  </li>
+                </ul>
+                <hr></hr>
+              </div>
+            </div>
+            <div>
+              <div class="job-title">
+                <div className="Company">
+                  <h6 className="job-title2">Front End Engineer"</h6>
+                  <h6 className="stack-logo">
+                    <a href="#" target="__blank">
+                      stack used
+                    </a>
+                  </h6>
+                </div>
+                <div class="timeframe">Oct 2022 - Present</div>
+              </div>
+              <div class="job-details">
+                <p>Helping build better API docs</p>
+                <ul>
+                  <li>
+                    Building out new Metrics features for data-driven API
+                    insights
+                  </li>
+                </ul>
+                <hr></hr>
+              </div>
+            </div>
+            <div>
+              <div class="job-title">
+                <div className="Company">
+                  <h6 className="job-title2">Front End Engineer"</h6>
+                  <h6 className="stack-logo">
+                    <a href="#" target="__blank">
+                      stack used
+                    </a>
+                  </h6>
+                </div>
+                <div class="timeframe">Oct 2022 - Present</div>
+              </div>
+              <div class="job-details">
+                <p>Helping build better API docs</p>
+                <ul>
+                  <li>
+                    Building out new Metrics features for data-driven API
+                    insights
+                  </li>
+                </ul>
+                <hr></hr>
+              </div>
+            </div>
+            <div>
+              <div class="job-title">
+                <div className="Company">
+                  <h6 className="job-title2">Front End Engineer"</h6>
+                  <h6 className="stack-logo">
+                    <a href="#" target="__blank">
+                      stack used
+                    </a>
+                  </h6>
+                </div>
+                <div class="timeframe">Oct 2022 - Present</div>
+              </div>
+              <div class="job-details">
+                <p>Helping build better API docs</p>
+                <ul>
+                  <li>
+                    Building out new Metrics features for data-driven API
+                    insights
+                  </li>
+                </ul>
+                <hr></hr>
+              </div>
             </div>
           </div>
         </div>
