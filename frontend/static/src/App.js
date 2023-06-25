@@ -126,6 +126,11 @@ function App() {
         <img src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetable-64/340/cactus_plant_green_nature_cacti-512.png"></img>
         <img src="https://cdn3.iconfinder.com/data/icons/stationery-and-office-3/64/Laptop-computer-electronics-technology-computing-business-256.png"></img>
       </div>
+      <h5>
+        "Dream big, work hard, and never stop learning. Your potential is
+        limitless, and you have the power to shape the future of technology." -
+        Felecia Hatcher, Entrepreneur and Tech Advocate
+      </h5>
       <Player
         id="hangingPlant2"
         autoplay
@@ -137,6 +142,17 @@ function App() {
           visible={false}
           buttons={["play", "repeat", "frame", "debug"]}
         />
+      </Player>
+
+      <Player
+        id="p2"
+        className="formplant"
+        autoplay
+        loop
+        src="https://assets7.lottiefiles.com/packages/lf20_valvvrfy.json"
+        style={{ height: "400px", width: "400px", alignItems: "left" }}
+      >
+        <Controls visible={false} />
       </Player>
 
       <div className="contactForm">
@@ -189,21 +205,6 @@ function App() {
             Submit
           </Button>
         </Form>
-      </div>
-      <Player
-        id="footerplant"
-        autoplay
-        loop
-        src="https://assets7.lottiefiles.com/private_files/lf30_uzc6bf9z.json"
-        style={{ height: "300px", width: "300px", alignItems: "right" }}
-      >
-        <Controls
-          visible={false}
-          buttons={["play", "repeat", "frame", "debug"]}
-        />
-      </Player>
-      <div className="foot">
-        © 2023, built using React.js and Django in New Orleans, LA
       </div>
     </div>
   );

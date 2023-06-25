@@ -6,6 +6,11 @@ h1 {
   color: black;
 }
 
+body {
+  height: 100%;
+  width: 100vw;
+}
+
 #hangingPlant {
   position: relative;
   left: 30rem;
@@ -13,7 +18,7 @@ h1 {
 #hangingPlant2 {
   position: relative;
   left: 30rem;
-  bottom: 30rem;
+  bottom: 35rem;
 }
 
 .contactForm {
@@ -21,12 +26,12 @@ h1 {
   border-radius: 5px;
   padding: 3rem;
   margin: 2rem;
-  margin-top: 2rem;
+  left: 3rem;
   position: relative;
-  bottom: 37rem;
+  bottom: 65rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  max-width: 600px;
+  max-width: 700px;
 }
 .contactTitle {
   text-align: center;
@@ -202,13 +207,31 @@ h2 {
     width: 100%;
   }
 } */
-#footerplant {
+
+.formplant {
   position: relative;
-  top: -50rem;
-  margin: none;
+  left: 20em;
 }
 
-.foot {
-  background-color: white;
-  min-height: 50px;
+#p2 {
+  position: relative;
+  left: 4rem;
+  bottom: 20rem;
+}
+
+.App {
+  max-height: 2500px;
+}
+
+h5 {
+  position: relative;
+  left: 60rem;
+  bottom: 10rem;
+  height: 5rem;
+  width: 20rem;
+  font-size: 30px !important;
+  color: antiquewhite;
+  font-weight: 600;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
 }
