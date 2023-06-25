@@ -97,15 +97,31 @@ function App() {
       <div className="Socials ">
         <div className="Socials-text">
           {" "}
-          <h3 className="intro" id="info-section">
-            Hello and welcome to my portfolio! I'm Amber, and I'm thrilled that
-            you've taken the time to explore my work. I hope you find it
-            engaging and insightful. Don't hesitate to connect with me on any of
-            the social media platforms listed below, or you can leave your
-            contact information in the form provided, and I'll be sure to get in
-            touch with you promptly. Thank you again for visiting!
+          <div className="intro" id="info-section">
+            <p>
+              {" "}
+              Welcome to my portfolio! I'm thrilled that you've taken the time
+              to explore my work. On this webpage, you'll find a navigation bar
+              at the top, guiding you to different sections of my portfolio.
+            </p>
+            <p>
+              The "About Me" page provides insights into my professional
+              background and offers a glimpse into who I am beyond being a
+              developer. It's a great way to get to know me on a personal level.
+              The "Blog" page is a space where I share my thoughts, updates on
+              my coding journey, and exciting technologies that I'm currently
+              working with. It's a platform for me to express my ideas and
+              engage with fellow enthusiasts.
+            </p>
+            <p>
+              Lastly, I invite you to visit my "Work" page, where you can
+              explore my latest applications. Feel free to check them out and
+              even stick around for a game of Connect Four. I hope you enjoy
+              your time here! Thank you once again for visiting, and please feel
+              free to reach out if you have any questions or feedback.
+            </p>
             <p> - Amber</p>
-          </h3>
+          </div>
           <div className="row">
             <p className="column">
               <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-256.png"></img>
@@ -127,9 +143,9 @@ function App() {
         <img src="https://cdn3.iconfinder.com/data/icons/stationery-and-office-3/64/Laptop-computer-electronics-technology-computing-business-256.png"></img>
       </div>
       <h5>
-        "Dream big, work hard, and never stop learning. Your potential is
-        limitless, and you have the power to shape the future of technology." -
-        Felecia Hatcher, Entrepreneur and Tech Advocate
+        "Success in tech requires resilience, determination, and the belief that
+        you belong in this space. Embrace the challenges and prove yourself." -
+        Arlan Hamilton, Founder and Managing Partner of Backstage Capital
       </h5>
       <Player
         id="hangingPlant2"
@@ -143,7 +159,6 @@ function App() {
           buttons={["play", "repeat", "frame", "debug"]}
         />
       </Player>
-
       <Player
         id="p2"
         className="formplant"
@@ -154,7 +169,6 @@ function App() {
       >
         <Controls visible={false} />
       </Player>
-
       <div className="contactForm">
         <p className="contactTitle">Leave your Contact information</p>
         <Form onSubmit={handleSubmit}>

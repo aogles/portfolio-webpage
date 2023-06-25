@@ -5,6 +5,9 @@
 h1 {
   color: black;
 }
+#info-section {
+  font-size: 20px;
+}
 
 body {
   height: 100%;
@@ -14,6 +17,7 @@ body {
 #hangingPlant {
   position: relative;
   left: 30rem;
+  top: 2px;
 }
 #hangingPlant2 {
   position: relative;
@@ -220,7 +224,7 @@ h2 {
 }
 
 .App {
-  max-height: 2500px;
+  max-height: 2550px;
 }
 
 h5 {
@@ -228,7 +232,7 @@ h5 {
   left: 60rem;
   bottom: 10rem;
   height: 5rem;
-  width: 20rem;
+  width: 25rem;
   font-size: 30px !important;
   color: antiquewhite;
   font-weight: 600;
