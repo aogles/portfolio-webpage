@@ -123,18 +123,21 @@ function App() {
             <p> - Amber</p>
           </div>
           <div className="row">
-            <p className="column">
+            <a
+              href="https://www.linkedin.com/in/amber-l-oglesby/"
+              className="column"
+            >
               <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-256.png"></img>
-            </p>
-            <p className="column">
+            </a>
+            <a href="https://github.com/aogles" className="column">
               <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"></img>
-            </p>
-            <p className="column">
+            </a>
+            <a className="column">
               <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/2840/tiktok-logo-512.png"></img>
-            </p>
-            <p className="column">
+            </a>
+            <a href="mailto:amber.l.oglesby@gmail.com" className="column">
               <img src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_email-256.png"></img>
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -181,7 +184,7 @@ function App() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
+              I'll never share your email with anyone else.
             </Form.Text>
           </Form.Group>
 
