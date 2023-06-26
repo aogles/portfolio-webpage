@@ -17,6 +17,12 @@ function App() {
   const [email, setEmail] = useState("");
   const [contactMessage, setContactMessage] = useState("");
 
+  const handleClick = () => {
+    alert(
+      "My Tiktok is under construction at the moment, please try again later"
+    );
+  };
+
   useEffect(() => {
     const getContactInfo = async () => {
       const response = await fetch("/api_v1/contacts/");
@@ -132,9 +138,10 @@ function App() {
             <a href="https://github.com/aogles" className="column">
               <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"></img>
             </a>
-            <a className="column">
+            <a onClick={handleClick} className="column tiktok">
               <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/2840/tiktok-logo-512.png"></img>
             </a>
+
             <a href="mailto:amber.l.oglesby@gmail.com" className="column">
               <img src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_email-256.png"></img>
             </a>

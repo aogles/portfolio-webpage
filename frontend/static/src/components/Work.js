@@ -51,7 +51,7 @@ function Work() {
                       src={require("../Images/convoy-commander.png")}
                     ></img>
                   </a>
-                  Convoy Trainer
+                  Convoy Commander
                   <h6 className="job-title2">Full Stack Engineer</h6>
                   <h6 className="stack-logo">
                     <a
@@ -65,12 +65,22 @@ function Work() {
                 <div className="timeframe">January 2023 - Present</div>
               </div>
               <div class="job-details">
-                <p>Helping build better API docs</p>
+                <p>Built military convoy training application</p>
                 <ul>
                   <li>
-                    Building out new Metrics features for data-driven API
-                    insights
+                    Full-stack mobile application that utilizes Django and
+                    ReactJS.
                   </li>
+                  <li>
+                    Built RESTful API in Django using Django Rest Framework that
+                    implements CRUD.
+                  </li>
+                  <li>Integrated Google Maps API for navigation assistance.</li>
+                  <li>
+                    Implemented a comprehensive user authentication and access
+                    control system using Django Rest Auth.
+                  </li>
+                  <li>Application data stored in PostgreSQL database.</li>
                 </ul>
                 <hr></hr>
               </div>
@@ -96,11 +106,15 @@ function Work() {
                 <div class="timeframe">January 2023 - February 2023</div>
               </div>
               <div class="job-details">
-                <p>Helping build better API docs</p>
+                <p>Webpage recreation & scraping</p>
                 <ul>
                   <li>
-                    Building out new Metrics features for data-driven API
-                    insights
+                    Recreated webpages to client specification using HTMLand CSS
+                    that is a pixel perfect match to the provided desktop image.
+                  </li>
+                  <li>
+                    Utilized media queries to achieve a responsive design that
+                    adapts seamlessly to mobile devices.
                   </li>
                 </ul>
                 <hr></hr>
@@ -116,7 +130,7 @@ function Work() {
                   <h6 className="job-title2">Front End Engineer</h6>
                   <h6 className="stack-logo">
                     <a
-                      href="replit.com/@aogles/pythonwordlegame"
+                      href="https://replit.com/@aogles/pythonwordlegame"
                       target="__blank"
                     >
                       Python Wordle
@@ -126,11 +140,13 @@ function Work() {
                 <div class="timeframe">March 2023</div>
               </div>
               <div class="job-details">
-                <p>Helping build better API docs</p>
+                <p>Wordle game created using Python</p>
                 <ul>
                   <li>
-                    Building out new Metrics features for data-driven API
-                    insights
+                    Created functions to compare the secret word with the
+                    player's guess and provide feedback, and a loop that prompts
+                    the player to enter a guess and provide feedback until the
+                    player either wins or runs out of guesses.
                   </li>
                 </ul>
                 <hr></hr>
@@ -159,11 +175,16 @@ function Work() {
                 <div class="timeframe">May 2023</div>
               </div>
               <div class="job-details">
-                <p>Helping build better API docs</p>
+                <p>Connect 4 Game</p>
                 <ul>
                   <li>
-                    Building out new Metrics features for data-driven API
-                    insights
+                    Utilized React framework to develop an engaging and
+                    interactive Connect Four game, showcasing proficiency in
+                    frontend web development.
+                  </li>
+                  <li>
+                    Leveraged React components and state management to ensure
+                    efficient and maintainable code structure.
                   </li>
                 </ul>
                 <hr></hr>

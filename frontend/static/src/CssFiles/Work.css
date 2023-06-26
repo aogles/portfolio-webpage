@@ -4,9 +4,9 @@
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   top: 12rem;
-  width: 70%;
+  width: 70rem;
 
-  left: 16%;
+  left: 16rem;
   padding: 2%;
 }
 .experience-head h2 {
@@ -41,19 +41,19 @@
 hr {
   position: relative;
   width: 80%;
-  right: 20%;
+  right: 10%;
 }
 
 .job-details,
 .stack-logo,
 .job-title2 {
   position: relative;
-  left: 30%;
+  left: 12rem;
 }
 
 .timeframe {
   position: relative;
-  left: 75%;
+  float: right;
   bottom: 3.5rem;
 }
 
@@ -85,4 +85,9 @@ hr {
 .job-title2 {
   font-weight: 700;
   font-size: 20px;
+}
+
+.job-details li {
+  position: relative;
+  margin-right: 10rem;
 }

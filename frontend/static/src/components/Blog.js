@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { FaChevronCircleUp } from "react-icons/fa";
 
 function Blog({ blog, ...props }) {
   const [blogs, setBlogs] = useState([]);
@@ -72,24 +74,114 @@ function Blog({ blog, ...props }) {
   return (
     <div>
       <Header />
-      <div>Blog Page</div>
+      <div className="gradient" id="top">
+        {" "}
+        <h1> Blog Posts</h1>
+        <p>
+          My space for scribbling down notes around what I’m thinking
+          about/working on/tinkering with. If you read anything here and have
+          feedback, corrections or thoughts, send me a message!
+        </p>
+        <hr></hr>
+      </div>
+      <Player
+        id="blog-plant1"
+        className="blog-plant"
+        autoplay
+        loop
+        src="https://assets5.lottiefiles.com/packages/lf20_wkvirknu.json"
+        style={{ height: "400px", width: "400px", alignItems: "right" }}
+      >
+        <Controls visible={false} />
+      </Player>
+      <Player
+        id="blog-plant2"
+        className="blog-plant"
+        autoplay
+        loop
+        src="https://assets7.lottiefiles.com/packages/lf20_sg1vub6j.json"
+        style={{ height: "300px", width: "300px", alignItems: "right" }}
+      >
+        <Controls
+          visible={false}
+          buttons={["play", "repeat", "frame", "debug"]}
+        />
+      </Player>
+      <div className="blogs">
+        {blogHTML}
 
-      {blogHTML}
+        {selectedBlog && (
+          <Modal show={showModal} onHide={handleClose}>
+            <Modal.Header>
+              <Modal.Title>{selectedBlog.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>{selectedBlog.message}</Modal.Body>
 
-      {selectedBlog && (
-        <Modal show={showModal} onHide={handleClose}>
-          <Modal.Header>
-            <Modal.Title>{selectedBlog.title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>{selectedBlog.message}</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        )}
+      </div>
+      <div className="arrow2 bounce">
+        <a id="blogArrow" href="#top">
+          <div style={{ width: 80, height: 80 }}>
+            <FaChevronCircleUp />
+          </div>
+        </a>
+      </div>
+      <div>
+        <Player
+          id="blog-plant3"
+          className="blog-plant"
+          autoplay
+          loop
+          src="https://assets5.lottiefiles.com/temp/lf20_hKSrGc.json"
+          style={{ height: "300px", width: "300px", alignItems: "right" }}
+        >
+          <Controls
+            visible={false}
+            buttons={["play", "repeat", "frame", "debug"]}
+          />
+        </Player>
+        <Player
+          id="blog-plant4"
+          className="blog-plant"
+          autoplay
+          loop
+          src="https://assets5.lottiefiles.com/packages/lf20_wkvirknu.json"
+          style={{ height: "400px", width: "400px", alignItems: "right" }}
+        >
+          <Controls visible={false} />
+        </Player>
+        <Player
+          id="blog-plant5"
+          className="blog-plant"
+          autoplay
+          loop
+          src="https://assets5.lottiefiles.com/temp/lf20_hKSrGc.json"
+          style={{ height: "300px", width: "300px", alignItems: "right" }}
+        >
+          <Controls
+            visible={false}
+            buttons={["play", "repeat", "frame", "debug"]}
+          />
+        </Player>
+        <Player
+          id="blog-plant6"
+          className="blog-plant"
+          autoplay
+          loop
+          src="https://assets5.lottiefiles.com/packages/lf20_wkvirknu.json"
+          style={{ height: "400px", width: "400px", alignItems: "right" }}
+        >
+          <Controls visible={false} />
+        </Player>
+      </div>
 
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      )}
+      <footer className="footer"></footer>
     </div>
   );
 }

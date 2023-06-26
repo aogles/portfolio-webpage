@@ -1,9 +1,10 @@
 .blogModal {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 5rem;
+  margin: 3rem;
   display: grid;
   min-width: 45rem;
   max-width: 50rem;
+  margin-bottom: 3rem;
 }
 
 .blogImage {
@@ -16,4 +17,94 @@
   display: grid;
   grid-template-columns: 80px 200px auto 40px;
   justify-content: space-evenly;
+}
+
+.blogs {
+  display: grid;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  bottom: 30rem;
+  left: 9rem;
+}
+
+#blog-plant1 {
+  position: relative;
+  right: 35rem;
+  bottom: 6rem;
+}
+
+#blog-plant2 {
+  position: relative;
+  left: 35rem;
+  bottom: 8rem;
+}
+
+.gradient h1 {
+  position: relative;
+  font-size: 60px !important;
+  color: antiquewhite;
+  font-weight: 600;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
+  top: 5rem;
+  text-align: center;
+}
+
+.gradient p {
+  position: relative;
+  font-size: 20px;
+  color: antiquewhite;
+  font-weight: 600;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
+  top: 5rem;
+  text-align: center;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+.gradient hr {
+  position: relative;
+
+  color: antiquewhite;
+  font-weight: 600;
+  left: 10rem;
+  top: 5rem;
+}
+
+#blog-plant3 {
+  position: absolute;
+  left: 15rem;
+  margin: 1px;
+  top: 190rem;
+}
+
+#blog-plant4 {
+  position: absolute;
+  left: 2rem;
+  margin: 1px;
+  top: 187rem;
+}
+#blog-plant5 {
+  position: absolute;
+  right: 15rem;
+  margin: 1px;
+  top: 190rem;
+}
+
+#blog-plant6 {
+  position: absolute;
+  right: 2rem;
+  margin: 1px;
+  top: 187rem;
+}
+
+.arrow2 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  bottom: 20rem;
+  left: 50rem;
+  margin: 0px;
+  font-size: 50px;
 }
