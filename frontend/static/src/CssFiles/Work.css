@@ -1,12 +1,19 @@
 .experience-head {
   position: relative;
-  border: red 3px solid;
-  background-color: antiquewhite;
+
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  top: 15rem;
+  top: 12rem;
   width: 70%;
 
-  left: 15%;
+  left: 16%;
+  padding: 2%;
+}
+.experience-head h2 {
+  margin-bottom: 5%;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
+  color: rgb(69, 97, 69) !important;
 }
 
 .tech-icons {
@@ -34,5 +41,48 @@
 hr {
   position: relative;
   width: 80%;
-  left: 7rem;
+  right: 20%;
+}
+
+.job-details,
+.stack-logo,
+.job-title2 {
+  position: relative;
+  left: 30%;
+}
+
+.timeframe {
+  position: relative;
+  left: 75%;
+  bottom: 3.5rem;
+}
+
+#convoy {
+  width: 64px;
+  height: 64px;
+}
+
+#game {
+  width: 64px;
+  height: 64px;
+}
+.Company p {
+  font-size: 50px;
+  color: green;
+}
+
+.Company {
+  margin-left: 2em;
+  font-size: 25px;
+}
+
+.wordle {
+  position: relative;
+  left: 3rem;
+  bottom: 4rem;
+}
+
+.job-title2 {
+  font-weight: 700;
+  font-size: 20px;
 }
