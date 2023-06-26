@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import { FaChevronCircleUp } from "react-icons/fa";
+import { FaChevronCircleUp, FaSpotify } from "react-icons/fa";
 
 function Blog({ blog, ...props }) {
   const [blogs, setBlogs] = useState([]);
@@ -181,7 +181,18 @@ function Blog({ blog, ...props }) {
         </Player>
       </div>
 
-      <footer className="footer"></footer>
+      <footer className="footer">
+        <div style={{ width: 100, height: 100 }}>
+          <FaSpotify />
+          <h3>
+            Last listened to{" "}
+            <a src="https://open.spotify.com/track/6ElfCM1XppU0YWkkFYh4s2">
+              Pressure
+            </a>{" "}
+            by Ari Lennox
+          </h3>
+        </div>
+      </footer>
     </div>
   );
 }

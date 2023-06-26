@@ -108,3 +108,14 @@
   margin: 0px;
   font-size: 50px;
 }
+
+.footer div {
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+
+  margin: 3rem;
+  min-width: 30rem;
+  text-align: start;
+  top: 5rem;
+}
