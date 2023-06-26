@@ -23,18 +23,19 @@ function About() {
           <h1>About Me Professionally</h1>
           <p>
             I am a highly motivated and disciplined individual with a passion
-            for problem-solving and creativity. As a recent Carolina Code School
+            for problem-solving and creativity. As a Carolina Code School
             graduate, I am excited to apply my new skills and experience to the
             field of software development.
           </p>
           <p>
             {" "}
-            After six years in direct patient care roles, I have honed my
-            ability to adapt quickly to new challenges, work collaboratively
-            with diverse teams, and communicate effectively under pressure.
-            Throughout my career in healthcare, I gained valuable experience in
-            managing complex workflows, analyzing data, and leveraging
-            technology to improve patient outcomes.
+            After six years in direct patient care roles, I decide to take a
+            chance and apply for the VET-TEC program. This program allows
+            veterans the opportunity to seek careers in tech. While software
+            development is very different from the meical field, I gained
+            valuable experience in managing complex workflows,working
+            collaboratively, analyzing data, and leveraging technology to
+            improve patient outcomes.
           </p>
           <p>
             As an Army officer, I developed skills in leadership, strategic

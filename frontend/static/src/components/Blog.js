@@ -182,11 +182,59 @@ function Blog({ blog, ...props }) {
       </div>
 
       <footer className="footer">
+        {/* <div>
+          <Player
+            id="blog-plant3"
+            className="blog-plant"
+            autoplay
+            loop
+            src="https://assets5.lottiefiles.com/temp/lf20_hKSrGc.json"
+            style={{ height: "300px", width: "300px", alignItems: "right" }}
+          >
+            <Controls
+              visible={false}
+              buttons={["play", "repeat", "frame", "debug"]}
+            />
+          </Player>
+          <Player
+            id="blog-plant4"
+            className="blog-plant"
+            autoplay
+            loop
+            src="https://assets5.lottiefiles.com/packages/lf20_wkvirknu.json"
+            style={{ height: "400px", width: "400px", alignItems: "right" }}
+          >
+            <Controls visible={false} />
+          </Player>
+          <Player
+            id="blog-plant5"
+            className="blog-plant"
+            autoplay
+            loop
+            src="https://assets5.lottiefiles.com/temp/lf20_hKSrGc.json"
+            style={{ height: "300px", width: "300px", alignItems: "right" }}
+          >
+            <Controls
+              visible={false}
+              buttons={["play", "repeat", "frame", "debug"]}
+            />
+          </Player>
+          <Player
+            id="blog-plant6"
+            className="blog-plant"
+            autoplay
+            loop
+            src="https://assets5.lottiefiles.com/packages/lf20_wkvirknu.json"
+            style={{ height: "400px", width: "400px", alignItems: "right" }}
+          >
+            <Controls visible={false} />
+          </Player>
+        </div> */}
         <div style={{ width: 100, height: 100 }}>
           <FaSpotify />
           <h3>
             Last listened to{" "}
-            <a src="https://open.spotify.com/track/6ElfCM1XppU0YWkkFYh4s2">
+            <a href="https://open.spotify.com/track/6ElfCM1XppU0YWkkFYh4s2">
               Pressure
             </a>{" "}
             by Ari Lennox
