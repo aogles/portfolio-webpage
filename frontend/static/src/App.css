@@ -2,10 +2,12 @@
 @import url(CssFiles/About.css);
 @import url(CssFiles/Header.css);
 @import url(CssFiles/Work.css);
+@import url(CssFiles/mobile.css);
 
 h1 {
   color: black;
 }
+
 #info-section {
   font-size: 20px;
 }
@@ -191,27 +193,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
-/* .slide-right {
-  width: 100%;
-  overflow: hidden;
-}
-.slide-right h1,
-h2 {
-  animation: 7s slide-right;
-} */
-
-/* @keyframes slide-right {
-  from {
-    margin-left: -100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-} */
 
 .formplant {
   position: relative;

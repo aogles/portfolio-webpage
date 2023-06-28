@@ -19,7 +19,7 @@ function Header() {
               />
             </a>
           </div>
-          <Nav className="header-links" id="header-links">
+          <Nav className="header-links menu-toggle" id="header-links">
             <NavLink to="/about">About</NavLink>
             <NavLink to="/blog">Blog</NavLink>
             <NavLink to="/work">Work</NavLink>

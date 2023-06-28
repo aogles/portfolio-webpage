@@ -1,0 +1,138 @@
+/* Media Queries for Mobile Responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .title,
+  #page-title {
+    font-size: 10vw;
+    top: -2rem;
+  }
+
+  .contactForm {
+    bottom: 2rem;
+  }
+
+  .Socials {
+    min-height: 20rem;
+  }
+
+  .row {
+    margin: 1rem;
+  }
+}
+
+/* Media Query for Hamburger Menu */
+.header-logo {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  left: 30em;
+}
+
+#header-logo:hover {
+  background: none;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-indent: 15px;
+  font-size: 30px;
+  left: 35px;
+}
+
+a {
+  color: rgb(69, 97, 69) !important;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
+  font-weight: 500;
+}
+
+a:hover {
+  background: #f58265;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  align-content: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: green !important;
+  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+    sans-serif;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .menu-toggle .fas {
+    font-size: 24px;
+  }
+
+  .menu-toggle.active + #header-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Socials-text {
+    min-width: auto;
+    min-height: auto;
+    border: none;
+    box-shadow: none;
+  }
+
+  .home-image {
+    margin: 2rem;
+    left: 0;
+    right: 0;
+    border: none;
+    bottom: 0;
+  }
+
+  .App {
+    background: none;
+    animation: none;
+  }
+
+  .formplant {
+    left: 0;
+  }
+
+  #p2 {
+    left: 2rem;
+    bottom: 0;
+  }
+
+  h5 {
+    left: 2rem;
+    bottom: 2rem;
+    height: auto;
+    width: auto;
+    font-size: 24px !important;
+  }
+}
