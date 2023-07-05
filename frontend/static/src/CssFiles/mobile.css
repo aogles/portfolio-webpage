@@ -7,8 +7,17 @@
     top: -2rem;
   }
 
+  .home-image important! {
+    position: relative;
+    margin: none;
+    left: 0rem;
+    right: 50rem;
+  }
+
   .contactForm {
+    position: relative;
     bottom: 2rem;
+    margin-right: 5rem;
   }
 
   .Socials {
@@ -18,53 +27,54 @@
   .row {
     margin: 1rem;
   }
-}
+  /* Media Query for Hamburger Menu */
+  .header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-indent: 15px;
+    font-size: 30px;
+    left: 1px;
+  }
 
-/* Media Query for Hamburger Menu */
-.header-logo {
-  position: relative;
-  height: 70px;
-  width: 70px;
-  left: 30em;
-}
+  #header-logo:hover {
+    background: none;
+  }
 
-#header-logo:hover {
-  background: none;
-}
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-indent: 15px;
+    font-size: 30px;
+    left: 40px;
+  }
 
-.header-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-indent: 15px;
-  font-size: 30px;
-  left: 35px;
-}
+  a {
+    color: rgb(69, 97, 69) !important;
+    font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+      sans-serif;
+    font-weight: 500;
+  }
 
-a {
-  color: rgb(69, 97, 69) !important;
-  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
-    sans-serif;
-  font-weight: 500;
-}
+  a:hover {
+    background: #f58265;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+  }
 
-a:hover {
-  background: #f58265;
-  border-radius: 5px;
-  padding: 5px;
-  text-align: center;
-  align-content: center;
-}
+  a:link {
+    text-decoration: none;
+    color: green !important;
+    font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
+      sans-serif;
+  }
 
-a:link {
-  text-decoration: none;
-  color: green !important;
-  font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
-    sans-serif;
-}
-
-.menu-toggle {
-  display: none;
+  .menu-toggle {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -104,14 +114,6 @@ a:link {
     min-height: auto;
     border: none;
     box-shadow: none;
-  }
-
-  .home-image {
-    margin: 2rem;
-    left: 0;
-    right: 0;
-    border: none;
-    bottom: 0;
   }
 
   .App {
