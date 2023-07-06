@@ -1,23 +1,25 @@
 /* Media Queries for Mobile Responsiveness */
 
 @media only screen and (max-width: 768px) {
-  .title,
-  #page-title {
+  .title {
     font-size: 10vw;
-    top: -2rem;
+    top: 8rem !important;
+  }
+  .title h2 {
+    top: -7rem !important;
   }
 
-  .home-image important! {
+  .home-image {
     position: relative;
-    margin: none;
-    left: 0rem;
-    right: 50rem;
+    margin-top: 9rem !important;
+
+    left: 0rem !important;
   }
 
   .contactForm {
     position: relative;
-    bottom: 2rem;
-    margin-right: 5rem;
+    margin-top: 20rem !important;
+    left: 0rem !important;
   }
 
   .Socials {
@@ -35,6 +37,10 @@
     text-indent: 15px;
     font-size: 30px;
     left: 1px;
+  }
+  #info-section {
+    top: 5rem !important;
+    margin-bottom: 5rem;
   }
 
   #header-logo:hover {
@@ -119,22 +125,31 @@
   .App {
     background: none;
     animation: none;
-  }
-
-  .formplant {
-    left: 0;
+    max-width: fit-content !important;
+    max-height: fit-content !important;
   }
 
   #p2 {
-    left: 2rem;
+    left: 0rem !important;
     bottom: 0;
   }
 
+  .plant-icons {
+    position: relative;
+
+    top: 48rem;
+    right: 44rem;
+  }
+
+  #hangingPlant {
+    display: none;
+  }
+  #hangingPlant2,
+  .arrow {
+    display: none;
+  }
+
   h5 {
-    left: 2rem;
-    bottom: 2rem;
-    height: auto;
-    width: auto;
-    font-size: 24px !important;
+    display: none;
   }
 }
