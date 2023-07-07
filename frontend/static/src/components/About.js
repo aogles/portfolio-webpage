@@ -32,13 +32,13 @@ function About() {
             After six years in direct patient care roles, I decide to take a
             chance and apply for the VET-TEC program. This program allows
             veterans the opportunity to seek careers in tech. While software
-            development is very different from the meical field, I gained
+            development is very different from the medical field, I gained
             valuable experience in managing complex workflows,working
             collaboratively, analyzing data, and leveraging technology to
             improve patient outcomes.
           </p>
           <p>
-            As an Army officer, I developed skills in leadership, strategic
+            As an Army Officer, I developed skills in leadership, strategic
             planning, and project management that are highly applicable to
             software development. I am eager to leverage these skills to build
             innovative solutions that meet the needs of users and businesses
