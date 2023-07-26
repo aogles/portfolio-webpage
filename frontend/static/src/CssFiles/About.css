@@ -133,3 +133,49 @@
   left: 5rem;
   background-color: antiquewhite;
 }
+
+@media screen and (max-width: 600px) {
+  .aboutMe {
+    top: 20rem;
+    float: none;
+    margin: 1rem;
+    left: 2rem; /* Reduce the margin for smaller screens */
+  }
+
+  #about-images {
+    flex-direction: row; /* Adjust the direction for smaller screens */
+    align-items: center; /* Adjust alignment for smaller screens */
+    justify-content: center; /* Adjust alignment for smaller screens */
+    left: 0;
+    top: 0;
+  }
+
+  .crawfish,
+  .army,
+  .dogs,
+  .medical {
+    display: none;
+  }
+  .headshot {
+    position: relative;
+    max-height: 320px;
+    max-width: 250px;
+    margin: 2rem;
+    bottom: 80rem;
+    right: -3rem;
+  }
+
+  .fadein-text,
+  .personal-intro {
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+    margin: 2rem;
+    left: -1rem;
+
+    bottom: 5rem;
+    /* Reduce the margin for smaller screens */
+  }
+
+  .personal-intro {
+    right: 15rem;
+  }
+}
