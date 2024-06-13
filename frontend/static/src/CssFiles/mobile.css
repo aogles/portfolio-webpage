@@ -1,6 +1,11 @@
 /* Media Queries for Mobile Responsiveness */
-
 @media only screen and (max-width: 768px) {
+  .App {
+    background: none;
+    animation: none;
+    max-width: fit-content !important;
+    max-height: fit-content !important;
+  }
   .title {
     font-size: 10vw;
     top: 8rem !important;
@@ -8,24 +13,19 @@
   .title h2 {
     top: -7rem !important;
   }
-
   .home-image {
     position: relative;
     margin-top: 9rem !important;
-
     left: 0rem !important;
   }
-
   .contactForm {
     position: relative;
     margin-top: 20rem !important;
     left: 0rem !important;
   }
-
   .Socials {
     min-height: 20rem;
   }
-
   .row {
     margin: 1rem;
   }
@@ -42,11 +42,9 @@
     top: 5rem !important;
     margin-bottom: 5rem;
   }
-
   #header-logo:hover {
     background: none;
   }
-
   .header-links {
     display: flex;
     flex-direction: column;
@@ -55,14 +53,12 @@
     font-size: 30px;
     left: 40px;
   }
-
   a {
     color: rgb(69, 97, 69) !important;
     font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
       sans-serif;
     font-weight: 500;
   }
-
   a:hover {
     background: #f58265;
     border-radius: 5px;
@@ -70,19 +66,16 @@
     text-align: center;
     align-content: center;
   }
-
   a:link {
     text-decoration: none;
     color: green !important;
     font-family: var(--fontFamilyBase), -apple-system, system-ui, Helvetica Neue,
       sans-serif;
   }
-
   .menu-toggle {
     display: none;
   }
 }
-
 @media (max-width: 768px) {
   .header-links {
     display: none;
@@ -120,36 +113,5 @@
     min-height: auto;
     border: none;
     box-shadow: none;
-  }
-
-  .App {
-    background: none;
-    animation: none;
-    max-width: fit-content !important;
-    max-height: fit-content !important;
-  }
-
-  #p2 {
-    left: 0rem !important;
-    bottom: 0;
-  }
-
-  .plant-icons {
-    position: relative;
-
-    top: 48rem;
-    right: 44rem;
-  }
-
-  #hangingPlant {
-    display: none;
-  }
-  #hangingPlant2,
-  .arrow {
-    display: none;
-  }
-
-  h5 {
-    display: none;
   }
 }
