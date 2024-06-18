@@ -62,7 +62,8 @@ hr {
   height: 64px;
 }
 
-#game {
+#game,
+#reason {
   width: 64px;
   height: 64px;
 }
@@ -78,7 +79,7 @@ hr {
 
 .wordle {
   position: relative;
-  left: 3rem;
+  left: 4.5rem;
   bottom: 4rem;
 }
 

@@ -10,6 +10,8 @@ import { BsFillFileWordFill } from "react-icons/bs";
 import { GiGamepadCross } from "react-icons/gi";
 import { convoy } from "../Images/convoy-commander.png";
 import { game } from "../Images/game-logo.png";
+import { reason } from "../Images/reason_one_inc_logo.jpeg";
+import { het } from "../Images/het-logo.png";
 
 function Work() {
   const [open, setOpen] = useState(false);
@@ -108,14 +110,15 @@ function Work() {
               <div class="job-details">
                 <p>Webpage recreation & scraping</p>
                 <ul>
-                  <li>
-                    Recreated webpages to client specification using HTMLand CSS
-                    that is a pixel perfect match to the provided desktop image.
-                  </li>
-                  <li>
-                    Utilized media queries to achieve a responsive design that
-                    adapts seamlessly to mobile devices.
-                  </li>
+                  <a
+                    href="https://www.linkedin.com/posts/amber-l-oglesby_css-project-pixelperfect-activity-7038026824227966976-9gdK?utm_source=share&utm_medium=member_desktop"
+                    target="__blank"
+                  >
+                    {" "}
+                    Recreated webpages to client specification using HTML and
+                    CSS that is a pixel perfect match to the provided desktop
+                    image.
+                  </a>
                 </ul>
                 <hr></hr>
               </div>
@@ -123,30 +126,33 @@ function Work() {
             <div>
               <div class="job-title">
                 <div className="Company">
-                  <p>
-                    <BsFillFileWordFill />
-                  </p>
-                  <div className="wordle">Wordle</div>
-                  <h6 className="job-title2">Front End Engineer</h6>
+                  <a>
+                    <img
+                      id="reason"
+                      src={require("../Images/reason_one_inc_logo.jpeg")}
+                    ></img>
+                  </a>
+                  <div className="wordle">Reason One</div>
+                  <h6 className="job-title2">Scholarship Recipient & Mentee</h6>
                   <h6 className="stack-logo">
                     <a
-                      href="https://replit.com/@aogles/pythonwordlegame"
+                      href="https://www.reasononeinc.com/reason-one-mentorship-and-scholarship-winners-2023"
                       target="__blank"
                     >
-                      Python Wordle
+                      Reason One
                     </a>
                   </h6>
                 </div>
-                <div class="timeframe">March 2023</div>
+                <div class="timeframe">May 2023</div>
               </div>
               <div class="job-details">
-                <p>Wordle game created using Python</p>
+                <p>Tech mentorship program </p>
                 <ul>
                   <li>
-                    Created functions to compare the secret word with the
-                    player's guess and provide feedback, and a loop that prompts
-                    the player to enter a guess and provide feedback until the
-                    player either wins or runs out of guesses.
+                    A full service agency building a creating useful, inclusive
+                    websites for healthcare, associations, and nonprofits. A
+                    Certified B Corporation™, we use our business as a force for
+                    good.
                   </li>
                 </ul>
                 <hr></hr>
@@ -158,33 +164,34 @@ function Work() {
                   <a>
                     <img
                       id="game"
-                      src={require("../Images/game-logo.png")}
+                      src={require("../Images/het-logo.png")}
                     ></img>
                   </a>
-                  Amateur Games
-                  <h6 className="job-title2">Front End Engineer</h6>
+                  Morehouse College
+                  <h6 className="job-title2">Front End Developer</h6>
                   <h6 className="stack-logo">
                     <a
-                      href="https://aogles.github.io/react_connect_4_app/"
+                      href="https://healthequitytracker.org/?gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyXpcY_zI8rCYV3JkF57PzuMpek-BsJTb9zaLwhVSCLfyW9BuVm9i3YaAp34EALw_wcB"
                       target="__blank"
                     >
-                      Connect 4
+                      Health Equity Tracker
                     </a>
                   </h6>
                 </div>
-                <div class="timeframe">May 2023</div>
+                <div class="timeframe">February 2024</div>
               </div>
               <div class="job-details">
-                <p>Connect 4 Game</p>
+                <p> Open Source Contribution Program</p>
                 <ul>
                   <li>
-                    Utilized React framework to develop an engaging and
-                    interactive Connect Four game, showcasing proficiency in
-                    frontend web development.
+                    The Health Equity Tracker from the Satcher Health Leadership
+                    Institute aims to address health disparities in the United
+                    States by identifying at-risk populations and highlighting
+                    data inequities
                   </li>
                   <li>
-                    Leveraged React components and state management to ensure
-                    efficient and maintainable code structure.
+                    Develop new features, fix bugs, and improve the codebase for
+                    the Health Equity Tracker.
                   </li>
                 </ul>
                 <hr></hr>
